@@ -1,0 +1,23 @@
+<html>
+<head>
+  <!-- In following  line will load the boltCommands.js files from Bolt cloud.-->
+  <script type="text/javascript" src="https://cloud.boltiot.com/static/js/boltCommands.js">
+  </script>
+
+  <script type="text/javascript">
+    // The following line will set the api key and device name. It will be auto-initialized by Bolt cloud.
+    setKey('{{ApiKey}}','{{Name}}');
+</script>
+
+</head>
+<body>
+<center>
+  <!-- In below line, We are calling the digitalWrite function from  boltCommands.js file to switch on the LED. -->
+  <button onclick="digitalWrite(0, 'HIGH');">Unlock</button>
+
+  <!-- In below line, we are calling the digitalWrite function from boltCommands.js file to switch off the LED. -->
+  <button onclick="digitalWrite(0, 'LOW');">Lock</button>
+
+</center>
+</body>
+</html>
